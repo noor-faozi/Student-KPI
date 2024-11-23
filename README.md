@@ -47,9 +47,9 @@ Follow these steps to set up and run the project on your local system:
    Open the project files in a code editor.
    Locate the configuration file for database settings (config.php).
    Update the database credentials to match your setup:
-   `$servername = "localhost";</br>
-   $username = "root";</br>
-   $password = ""; <! --- Leave empty if no password --></br>
+   `$servername = "localhost";
+   $username = "root";
+   $password = ""; //Leave empty if no password
    $dbname = "mykpi";`</br>
 
 8. Run the Application
