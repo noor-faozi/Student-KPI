@@ -47,15 +47,15 @@ Follow these steps to set up and run the project on your local system:
    Open the project files in a code editor.
    Locate the configuration file for database settings (config.php).
    Update the database credentials to match your setup:
-   `$servername = "localhost";
+   `$servername = "localhost";<br>
    $username = "root";
    $password = ""; //Leave empty if no password
    $dbname = "mykpi";`</br>
 
 8. Run the Application
    Open your web browser.
-   Navigate to the project URL:
-   http://localhost/Student-KPI/
+   Navigate to the project URL:</br>
+   http://localhost/Student-KPI/</br>
    You should see the application homepage.
 
 10. Default Login Credentials
