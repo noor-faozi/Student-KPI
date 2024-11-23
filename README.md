@@ -15,9 +15,9 @@ Database: ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-b
 Server: ![XAMPP](https://img.shields.io/badge/Xampp-F37623?style=for-the-badge&logo=xampp&logoColor=white)</br>
 
 ## How to Set Up
-Follow these steps to set up and run the project on your local system:
+Follow these steps to set up and run the project on your local desktop:
 
-1. Install Required Software
+1. Install Required Software</br>
    Ensure you have the following installed:
    - XAMPP (Apache server and MySQL database)
    - A web browser
@@ -47,7 +47,7 @@ Follow these steps to set up and run the project on your local system:
    Select the .sql file from the project folder `(path: mysql/mykpi.sql)`.</br>
    Click Go to execute the import.</br>
 
-6. Configure Database Connection
+5. Configure Database Connection</br>
    Open the project files in a code editor.</br>
    Locate the configuration file for database settings (config.php).</br>
    Update the database credentials to match your setup:</br>
@@ -58,13 +58,13 @@ Follow these steps to set up and run the project on your local system:
    $dbname = "mykpi";
 
 
-8. Run the Application
+6. Run the Application</br>
    Open your web browser.</br>
    Navigate to the project URL:</br>
    http://localhost/Student-KPI/</br>
-   You should see the application homepage.
+   You should see the homepage.
 
-10. Default Login Credentials
+7. Default Login Credentials</br>
    You can log in using the following credentials:</br>
    Username: 1234</br>
    Password: User@2024</br>
