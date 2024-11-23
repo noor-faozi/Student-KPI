@@ -1,6 +1,6 @@
 # ![👩🏻_🎓Student_KPI (1)](https://github.com/user-attachments/assets/5771b8d8-882c-496d-be95-20ce81328959)
 
-Student KPI is a web-based application designed to help students track their academic and extracurricular performance metrics effectively. The system provides a way to manage student KPIs based on various parameters such as academic performance, activities, competitions, and certifications.
+Student KPI is a web-based application designed to help students track their academic and extracurricular performance metrics effectively. The system provides a way to manage student KPIs based on various parameters such as academic performance, activities, competitions, and certifications.</br>
 ![homepage](https://github.com/user-attachments/assets/c83cb2fa-6d81-45eb-9688-ea04e1e539bf)</br>
 ![loginpage](https://github.com/user-attachments/assets/3347cd41-ed63-4853-b21d-2787fe5ea25f)
 
@@ -29,7 +29,7 @@ Follow these steps to set up and run the project on your local system:
    Open GitHub Desktop or use a terminal.</br>
    Clone the repository:</br>
    ```bash
-   git clone https://github.com/noor-faozi/Student-KPI.git
+   git clone https://github.com/<username>/Student-KPI.git
 </br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alternatively, download the ZIP file of the repository and extract it. 
 
