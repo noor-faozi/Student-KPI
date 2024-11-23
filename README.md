@@ -1,6 +1,9 @@
 # ![👩🏻_🎓Student_KPI (1)](https://github.com/user-attachments/assets/5771b8d8-882c-496d-be95-20ce81328959)
 
 Student KPI is a web-based application designed to help students track their academic and extracurricular performance metrics effectively. The system provides a way to manage student KPIs based on various parameters such as academic performance, activities, competitions, and certifications.
+![homepage](https://github.com/user-attachments/assets/c83cb2fa-6d81-45eb-9688-ea04e1e539bf)</br>
+![loginpage](https://github.com/user-attachments/assets/3347cd41-ed63-4853-b21d-2787fe5ea25f)
+
 
 ## Built With
 Frontend:
@@ -21,39 +24,42 @@ Follow these steps to set up and run the project on your local system:
    - A code editor
    - GitHub Desktop (optional, if cloning the repository)
 
-2. Clone the Repository
-   If the repository is hosted on GitHub:
-   Open GitHub Desktop or use a terminal.
-   Clone the repository:
-   `bash</br>
-   git clone https://github.com/noor-faozi/Student-KPI.git`</br>
-   Alternatively, download the ZIP file of the repository and extract it. 
+2. Clone the Repository</br>
+   If the repository is hosted on GitHub:</br>
+   Open GitHub Desktop or use a terminal.</br>
+   Clone the repository:</br>
+   ```bash
+   git clone https://github.com/noor-faozi/Student-KPI.git
+</br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alternatively, download the ZIP file of the repository and extract it. 
 
 3. Move Project Files to XAMPP
-   Navigate to your XAMPP installation directory (usually `C:\xampp\htdocs on Windows` or `/opt/lampp/htdocs` on Linux).
+   Navigate to your XAMPP installation directory (usually `C:\xampp\htdocs on Windows` or `/opt/lampp/htdocs` on Linux).</br>
    Copy the entire project folder (e.g., Student-KPI) into the htdocs directory.
 
-4. Import the Database
-   Start XAMPP and enable the Apache and MySQL services.
-   Open a web browser and go to phpMyAdmin.
-   Create a new database:
-   Name it mykpi.
-   Import the SQL file:
-   Click Import.
-   Select the .sql file from the project folder `(path: mysql/mykpi.sql)`.
-   Click Go to execute the import.
+4. Import the Database</br>
+   Start XAMPP and enable the Apache and MySQL services.</br>
+   Open a web browser and go to phpMyAdmin.</br>
+   Create a new database:</br>
+   Name it "mykpi".</br>
+   Import the SQL file:</br>
+   Click Import.</br>
+   Select the .sql file from the project folder `(path: mysql/mykpi.sql)`.</br>
+   Click Go to execute the import.</br>
 
 6. Configure Database Connection
-   Open the project files in a code editor.
-   Locate the configuration file for database settings (config.php).
-   Update the database credentials to match your setup:
-   `$servername = "localhost";<br>
+   Open the project files in a code editor.</br>
+   Locate the configuration file for database settings (config.php).</br>
+   Update the database credentials to match your setup:</br>
+   ```php
+   $servername = "localhost";
    $username = "root";
    $password = ""; //Leave empty if no password
-   $dbname = "mykpi";`</br>
+   $dbname = "mykpi";
+
 
 8. Run the Application
-   Open your web browser.
+   Open your web browser.</br>
    Navigate to the project URL:</br>
    http://localhost/Student-KPI/</br>
    You should see the application homepage.
