@@ -1,0 +1,1219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+	margin: 10px;
+}
+
+/*===========================================
+  CSS for header in every page
+===========================================*/
+.sec-1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('../img/banner.png'); 
+    background-size: cover; 
+    background-position: center;
+    color: #fff; 
+    text-align: center; 
+}
+
+.sec-1::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #5a756a, transparent);
+    z-index: 100;
+}
+
+#title {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+}
+
+#myName {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 80%);
+    color: #9CCBB8;
+    /* color: #66dbcf; */
+    white-space: nowrap;
+    font-size: 3vw;
+    z-index: 9;
+}
+
+#exploreBtn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #5F967C;
+    font-size: 1.5em;
+    z-index: 10;
+    transform: translateY(100px);
+    cursor: pointer;
+}
+
+#exploreBtn:hover {
+    background-color: #dad7d7;
+    color: #486856;
+}
+
+.scrollDown::before,
+.scrollDown::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%,-50%) ;
+}
+
+.scrollDown::after {
+    top: 30%;
+}
+
+/*===========================================
+  CSS for footer in every page
+===========================================*/ 
+footer{
+    margin-top: 40px;
+	text-align: center;
+	font-size: 12px;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+/*===========================================
+  CSS for index.php
+===========================================*/ 
+form#login {
+	width: auto;
+	/* border: 2px solid #989898; */
+	padding: 10px;
+	background: #ffffff;
+	border-radius: 10px;
+    box-shadow: 0px 0px 25px #adadb0;
+}
+
+form#register {
+    height: 570px;
+	width: auto;
+	padding: 10px;
+	background: #ffffff;
+	border-radius: 10px;
+    box-shadow: 0px 0px 25px #adadb0;
+}
+
+.imgcontainer{
+	width: 200px; 
+	height: 200px; 
+	overflow: hidden;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px; 
+	margin: 0 auto; 
+}
+
+.avatar {
+	width: 100%; 
+	height: 100%; 
+	object-fit: cover;
+	border-radius: 50%;
+	display: block;
+}
+
+.container {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left;
+    color: #486856;
+}
+
+.container h2 {
+	text-align: center;
+    padding-bottom: 10px;
+}
+
+.container .input-container {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+.input-container label {
+display: block;
+margin-bottom: 10px;
+text-align: left;
+font-weight: 100;
+}
+
+.input-container label b {
+font-weight: 600;
+}
+
+.input-container input {
+border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+    padding-left: 30px;
+	width: 100%;
+	transition: .2s;
+} 
+
+.input-container input:active, 
+.input-container input:focus, 
+.input-container input:hover {
+    outline: none;
+	border-bottom-color: #486856;
+} 
+
+.input-container i {
+    position: absolute;
+    margin-left: auto;
+    top: 50%;
+    transform: translateY(-70%);
+    font-size: 20px;
+    color: #486856;
+}
+
+#togglePassword1,
+#togglePassword2,
+#togglePassword3 {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-65%);
+    cursor: pointer;
+    color: rgb(146, 146, 146);
+}
+
+.container label#remember {
+    color: #486856;
+}
+
+.container label#remember input{
+    accent-color: #486856;
+}
+
+.button-container {
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-container button {
+background: #fff;
+	font-size: 14px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #C0DFD3;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: #486856;
+	box-shadow: 0px 2px 2px #486856;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.button-container button i {
+	color: #486856;
+    margin-left: auto;
+    font-size: 24px;
+}
+
+.button-container button:hover {
+    border-color: #3A4C40;
+	outline: none;
+}
+
+.container .psw a:hover {
+    color: #45a049;
+}
+
+#registerDiv {
+    display: none;
+    width: 400px;
+}
+
+#registerDiv h2{
+	color: #3D635E;
+    margin-bottom: 30px;
+}
+
+#registerDiv .input-container {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 20px;
+
+}
+
+#registerDiv .button-container {
+	justify-content: space-between;
+    cursor: pointer;
+}
+
+#registerDiv input[type="text"],
+#registerDiv input[type="password"], 
+#registerDiv input[type="email"] {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+    padding-left: 30px;
+	width: 100%;
+	transition: .2s;
+}
+
+#registerDiv input[type="text"]:hover,
+#registerDiv input[type="password"]:hover, 
+#registerDiv input[type="email"]:hover,
+#registerDiv input[type="text"]:focus,
+#registerDiv input[type="password"]:focus, 
+#registerDiv input[type="email"]:focus
+#registerDiv input[type="text"]:active,
+#registerDiv input[type="password"]:active, 
+#registerDiv input[type="email"]:active{
+    outline: none;
+	border-bottom-color: #486856;
+} 
+
+.input-container input::placeholder {
+	font-size: 14px;
+}
+
+#registerDiv button
+{
+    display: block;
+    background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #C0DFD3;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: #486856;
+	box-shadow: 0px 2px 2px #486856;
+	cursor: pointer;
+	transition: .2s;
+}
+
+#registerDiv input[type="reset"] {
+	width: 30%;
+	padding: 8px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	border-radius: 40px;
+	background-color: #ccc;
+}
+
+#registerDiv input[type="reset"]:hover{
+	background-color: #d1d1d1;
+}
+
+#registerDiv input[type="submit"]:hover,
+#registerDiv input[type="submit"]:active,
+#registerDiv input[type="submit"]:focus {
+    border-color: #3A4C40;
+	outline: none;
+
+}
+
+p.error {
+	background: #F2DEDE;
+	color: #A94442;
+	padding: 10px;
+	width: 95%;
+	border-radius: 5px;
+	margin: 20px auto;
+	font-size: 14px;
+}
+	
+p.success {
+		background: #D4EDDA;
+		color: #40754C;
+		padding: 10px;
+		width: 95%;
+		border-radius: 5px;
+		margin: 20px auto;
+}
+
+/*===========================================
+  CSS for profile.php
+===========================================*/ 
+td {
+    height: 40px;
+    font-size: 16px;
+}
+
+#profile-card td#heading {
+    color: grey;
+    font-weight: 600;
+}
+
+#profile-card td {
+    padding-left: 10px;
+}
+/*===========================================*/
+
+/*===========================================
+  CSS for image (profile photo) in profile.php
+=============================================*/		
+.profileimg {
+    width: 70%;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+div#profile-card {
+    /* border: 1px solid #989898; */
+    padding: 20px;
+    margin: auto 10px;
+    /* border-radius: 15px; */
+    box-shadow: 0 0 4px 0px rgba(85, 85, 85, 0.8);
+}
+
+a#edit {
+	background-color: #ffc100;
+	/* text-align: center; */
+    display: flex;
+    justify-content: center;
+    width: auto;
+	text-decoration: none;
+	text-align: right;
+	margin: 10px 60px;
+	padding: 10px 13px;
+	font-size: 20px;
+	line-height: 1.5;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #ffc100;
+	border: 0;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+a#edit:hover, a.editBtn:hover {
+	background-color: #e0aa08;
+}
+
+a#edit i {
+    line-height: 1.5;
+	color: #fff;
+	text-align: center;
+	padding-right: 8px;
+}
+/*===========================================*/
+
+/*===========================================
+  CSS for profile_edit.php
+===========================================*/ 
+.upload {
+	width: 200px; /* Adjust the container width as needed */
+	margin: auto; /* Center the container horizontally */
+	position: relative;
+}
+
+div#preview {
+    width: 200px;
+    height: 200px;
+}
+
+.upload .image, .imgcontainer .image {
+	width: 100%; /* Makes the image take 100% width of the container */
+	height: 100%; /* Makes the image take 100% height of the container */
+	object-fit: cover; /* Ensures the image covers the entire container */
+	border-radius: 50%; /* Makes the image itself circular */
+	display: block;
+	border: 6px solid #9CCBB8;
+}
+
+.round {
+    cursor: pointer;
+}
+
+.upload .round {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #00B4FF;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    font-size: 25px;
+}
+
+.round:hover {
+	background: #02a7ed;
+}
+
+.left button {
+	display: block;
+	text-align: center;
+	margin: 10px auto;
+	padding: 6px;
+	font-size: 15px;
+	line-height: 1.5;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #D4403A;
+	border: 0;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+.left button:hover {
+	background-color: #b3332f;
+}
+  
+.upload .round input[type = "file"]{
+	position: absolute;
+	transform: scale(2);
+	opacity: 0;
+}
+  
+
+#profile-table td {
+	color: #989898;
+}
+
+#profile-table td input, 
+#profile-table td select, 
+#profile-table td textarea {
+    margin: 10px 0px;
+    width: 300px;
+    display: block;
+    border: none;
+    padding: 10px 0;
+    border-bottom: solid 1px #1abc9c;
+    transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, #1abc9c 4%);
+    background-size: 1000px 100%;
+    background-repeat: no-repeat;
+}
+
+#profile-table td input:focus,
+#profile-table td select:focus,
+#profile-table td textarea:focus{
+    outline: none; /* Remove the default focus outline */
+    border: 1px solid #555;
+    box-shadow: 0 0 5px rgba(85, 85, 85, 0.8); /* Add a subtle box shadow for emphasis */
+}
+
+#profile-table td#unedited {
+    margin: 10px 0px;
+    width: 300px;
+	cursor: not-allowed;
+    display: block;
+    border: none;
+    padding: 10px;
+    height: 40px;
+    border-bottom: solid 1px #989898;
+    transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, #989898 4%);
+    background-size: 1000px 100%;
+    background-repeat: no-repeat;
+}
+/*===========================================*/
+
+/*===========================================
+  CSS for my_challenge.php & my_activities.php
+===========================================*/ 
+div#challengeDiv, div#activityDiv{
+    display: none;
+}
+
+#challengeDiv table, #activityDiv table{	
+	border-collapse: collapse;
+	width: 50%;
+	padding-left: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#challengeDiv select, #activityDiv select{
+	padding: 5px;
+}
+
+#challengeDiv input[type="text"], 
+#activityDiv input[type="text"]{
+	padding: 5px;
+}	
+
+#challengeDiv textarea, 
+#activityDiv textarea{
+	width:95%;
+	padding: 5px;
+}
+
+#challengeDiv td, #challengeDiv th,
+#activityDiv td, #activityDiv th{
+	border: 1px solid #616161;
+	padding: 8px;
+}
+/*===========================================*/
+
+/*===========================================
+  CSS used for responsive div in index.php
+  profile.php and profile_edit.php using flex.
+===========================================*/
+.row {
+	display: flex;
+	flex-wrap: wrap; 
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col-login, .col-left{	
+	text-align: center; 
+	flex: 30%;
+	padding: 15px;
+}
+
+.col-news, .col-right{	
+	flex: 60%; 
+	padding: 15px;
+}
+
+.profile {
+	margin: 20px;
+}
+
+.right {
+	width: 70%;
+    float: left;
+}
+
+.left {
+	width: 30%;
+    float: left;
+}
+/*===========================================*/
+
+/*===========================================
+  CSS for menu in every page
+===========================================*/
+
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.head::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .07);
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+
+.head::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    transition: .5s;
+}
+
+.head:hover::after {
+    left: 100%;
+}
+
+.topnav a {
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 6px 6px;
+}
+
+.topnav a:hover,
+.topnav a.active{
+    background: #fff;
+    color: #5F967C;
+}
+
+#check {
+    display: none;
+}
+
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+/*===========================================*/
+
+/*===========================================
+  CSS for my_kpi.php
+
+===========================================*/
+
+input[type="submit"], 
+input[type="reset"], input[type="button"]{
+	cursor: pointer;
+}
+
+#kpiDiv select{
+	padding: 5px;
+}
+
+#kpiDiv input[type="text"]{
+	padding: 5px;
+}	
+
+#kpiDiv textarea{
+	width:95%;
+	padding: 5px;
+}
+
+div#kpiDiv {
+    display: none;
+}
+
+table.kpi {
+    width: 100%;
+    font-size: 11px;
+    border: 1px solid black;
+    border-collapse: collapse;
+	flex: 0 0 auto;
+
+}
+/*===========================================*/
+
+/*===========================================
+  CSS  for style table
+===========================================*/
+#projectable {
+	border-collapse: collapse;
+	width: 100%;
+	padding-left: 30px;
+
+}
+
+#projectable td, #projectable th {
+	border: 1px solid black;
+	padding: 8px;
+}
+
+#projectable th {
+	text-align: center;
+}
+
+#projectable tr:nth-child(even){background-color: #ddd;}
+#projectable tr:hover {background-color: #C8B4BA;}
+#projectable th {
+    text-align: center;
+    background-color: #588970;
+    color: white;
+    font-size: 13px;
+}
+
+#projectable td {
+	color: black;
+}
+
+td a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+a.deleteBtn {
+    background-color: #D4403A;
+    display: inline-block;
+    margin: 2px 2px;
+
+}
+a.editBtn {
+    background-color: #ffc100;
+    display: inline-block;
+    margin: 2px 2px;
+}
+/*===========================================*/
+
+/*===========================================
+  CSS  for style form 
+===========================================*/
+
+label.indicator {
+    font-size: 20px;
+    padding: 10px 0;
+    color: #3A4C40;
+}
+
+#subrow th {
+    background-color: #9CCBB8;
+    color: black;
+}
+
+.table-container {
+    position: relative;
+  }
+
+div button#new {
+    position: absolute;
+    bottom: -50px;
+    right: 10px;
+    text-align: right;
+    /* margin: 10px auto; */
+    padding: 8px;
+    /* margin-bottom: 20px; */
+    font-size: 15px;
+    line-height: 1.5;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #486856;
+    border: 0;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+div#inputForm{
+    width:500px;
+    height:auto;
+    margin:0px auto 0;
+    padding:30px;
+    background-color:#EEE;
+    color:#333;
+    border:2px solid #9CCBB8;
+    border-radius:40px 0 40px 0
+}
+
+label{
+    display: block;
+    font-size:15px;
+    font-weight:700
+}
+
+#myInput, #inputForm select, #inputForm textarea#semYear{
+    border:1px solid #DADADA;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:14px;
+    box-shadow:0 0 8px;
+    -webkit-box-shadow:0 0 8px;
+    -moz-box-shadow:0 0 80px;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px
+}
+
+input#fileToUpload {
+    width: 100%;
+}
+
+#new:hover {
+	background-color: #5F967C;
+}
+
+#form-submit, #form-reset {
+	text-decoration: none;
+	text-align: right;
+	margin: 10px auto;
+	padding: 10px 13px;
+	font-size: 15px;
+	line-height: 1.5;
+	border-radius: 5px;
+	color: #fff;
+	border: 0;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+#form-submit {
+	background-color: #198754;
+}
+
+#form-reset {
+	background-color: #ffc100;
+}
+
+#form-reset:hover {
+	background-color: #e0aa08;
+}
+
+#form-submit:hover {
+	background-color: #479F76;
+}
+
+a#remove {
+    text-align: center;
+    text-decoration: none;
+    margin: 10px auto;
+    padding: 6px;
+    font-size: 15px;
+    line-height: 1.5;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #D4403A;
+    border: 0;
+    transition: 0.2s;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+a#remove:hover, a.deleteBtn:hover {
+    background-color: #b3332f;
+}
+
+.searchWrapper {
+    position: relative;
+}
+
+.searchWrapper input {
+    width: 90%;
+    padding: 3px;
+    padding-right: 40px; 
+}
+
+.searchWrapper i {
+    position: absolute;
+    right: 70px; 
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+    color: #588970;
+}
+
+.uploadContainer {
+    background-color: #ffffff;
+    width: 50%;
+    min-width: 400px;
+    margin: auto;
+    padding: 50px 30px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.05);
+    border-radius: 7px;
+}
+
+.uploadImgContainer {
+    width: 90%;
+    margin: 0 auto 30px auto;
+}
+
+.uploadImgContainer img{
+    display: block;
+    max-width: 100%;
+    max-height: 400px;
+    margin: auto;
+}
+
+figcaption {
+    margin: 20px 0 30px 0;
+    text-align: center;
+    color: #198754;
+}
+
+input[type="file"]#fileToUpload {
+    display: none;
+}
+
+label#fileLabel {
+    display: block;
+    position: relative;
+    background-color: #00B4FF;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    width: 300px;
+    padding: 18px 0;
+    border-radius: 5px;
+    margin: auto;
+    cursor: pointer;
+}
+label#fileLabel:hover {
+    background-color: #02a7ed;
+}
+label#fileLabel i {
+    font-size: 25px;
+}
+/*===========================================*/
+
+/*===========================================
+  CSS for kpi menue 
+===========================================*/
+#subkpi ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+#subkpi li {
+    float: left;
+}
+
+#subkpi  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+#subkpi li a:hover:not(.active) {
+    background-color: #ddd;
+}
+  
+#subkpi li a.active {
+    color: white;
+    background-color: #588970;
+}
+/*===========================================*/
+
+/*===========================================
+  CSS when pages are resized to smaller or 
+  for mobile screen, modify the max-width
+===========================================*/
+@media (max-width: 1223px) {
+	div#kpi {
+		/* Reset the flex property to prevent stretching */
+		overflow-x: auto;
+		flex: none; 
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 907px) {
+    table{
+		overflow-x:auto;
+
+	}
+}
+
+
+@media (max-width: 750px) {
+	div#challenge, div#activity {
+		/* Reset the flex property to prevent stretching */
+		overflow-x: auto;
+		flex: none; 
+		width: 100%;
+	}
+
+    table{
+		overflow-x:auto;
+
+	}
+}
+
+@media (max-width: 1014px) {
+    .head {
+        padding: 1.7rem;
+    }
+
+    .topnav a{
+        margin: 3px;
+    }
+}
+
+@media (max-width: 885px) {
+    .icons {
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+    .icons #close-icon {
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+
+    .topnav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(50px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        overflow: hidden;
+        transition: .3s ease;
+        z-index: 100;
+    }
+
+
+    #check:checked~.topnav {
+        height: 25rem;
+    }
+
+    .topnav a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+	.topnav a:hover, .topnav a.active{
+	margin-left: 130px;
+    margin-right: 130px;
+	}
+
+    #check:checked~.topnav a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(.15s * var(--i));
+    }
+
+	table{
+		overflow-x:auto;
+
+	}
+
+    input#search {
+        width: 70%;
+        padding: 3px;    
+    }
+
+
+    div button#new {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+      }
+
+      #subkpi {
+        text-align: center;
+    }
+
+    #subkpi ul {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        background-color: transparent;
+    }
+
+    #subkpi li {
+        float: none;
+        width: 100%;
+    }
+
+    #subkpi li a {
+        padding: 14px;
+        border-bottom: 1px solid #e7e7e7;
+    }
+
+}
+
+@media (max-width: 786px) {
+	
+	.image {
+		display: block;
+		width: 30%; /* Set the image to 30% width */
+		margin: 0 auto; /* Center the image horizontally */
+	}
+
+    h1 {
+        font-size: 45px;
+    }
+			
+	.row {
+		/* Stack elements vertically on smaller screens */
+		flex-direction: column; 
+		width: 95%;
+    }
+	
+	[class*="col-"], .left, .right, div#kpi {
+		/* Reset the flex property to prevent stretching */
+		overflow-x: auto;
+		flex: none; 
+		width: 100%;
+    }
+
+	#challengeDiv table, #kpiDiv table, #activityDiv table{
+		width: 100%;
+	}
+}
+
+
