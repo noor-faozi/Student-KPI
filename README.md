@@ -23,44 +23,43 @@ Follow these steps to set up and run the project on your local system:
 
 2. Clone the Repository
    If the repository is hosted on GitHub:
-
-Open GitHub Desktop or use a terminal.
-Clone the repository:
-`bash
-git clone https://github.com/noor-faozi/Student-KPI.git`
-Alternatively, download the ZIP file of the repository and extract it. 
+   Open GitHub Desktop or use a terminal.
+   Clone the repository:
+   `bash</br>
+   git clone https://github.com/noor-faozi/Student-KPI.git`</br>
+   Alternatively, download the ZIP file of the repository and extract it. 
 
 3. Move Project Files to XAMPP
-Navigate to your XAMPP installation directory (usually C:\xampp\htdocs on Windows or /opt/lampp/htdocs on Linux).
-Copy the entire project folder (e.g., Student-KPI) into the htdocs directory.
+   Navigate to your XAMPP installation directory (usually `C:\xampp\htdocs on Windows` or `/opt/lampp/htdocs` on Linux).
+   Copy the entire project folder (e.g., Student-KPI) into the htdocs directory.
 
 4. Import the Database
-Start XAMPP and enable the Apache and MySQL services.
-Open a web browser and go to phpMyAdmin.
-Create a new database:
-Name it mykpi.
-Import the SQL file:
-Click Import.
-Select the .sql file from the project folder (path: mysql/mykpi.sql).
-Click Go to execute the import.
+   Start XAMPP and enable the Apache and MySQL services.
+   Open a web browser and go to phpMyAdmin.
+   Create a new database:
+   Name it mykpi.
+   Import the SQL file:
+   Click Import.
+   Select the .sql file from the project folder `(path: mysql/mykpi.sql)`.
+   Click Go to execute the import.
 
 6. Configure Database Connection
-Open the project files in a code editor.
-Locate the configuration file for database settings (config.php).
-Update the database credentials to match your setup:
-`$servername = "localhost";
-$username = "root";
-$password = ""; // Leave empty if no password
-$dbname = "mykpi";`
+   Open the project files in a code editor.
+   Locate the configuration file for database settings (config.php).
+   Update the database credentials to match your setup:
+   `$servername = "localhost";</br>
+   $username = "root";</br>
+   $password = ""; <! --- Leave empty if no password --></br>
+   $dbname = "mykpi";`</br>
 
 8. Run the Application
-Open your web browser.
-Navigate to the project URL:
-http://localhost/Student-KPI/
-You should see the application homepage.
+   Open your web browser.
+   Navigate to the project URL:
+   http://localhost/Student-KPI/
+   You should see the application homepage.
 
 10. Default Login Credentials
-You can log in using the following credentials:
-Username: 1234
-Password: User@2024
+   You can log in using the following credentials:</br>
+   Username: 1234</br>
+   Password: User@2024</br>
 
